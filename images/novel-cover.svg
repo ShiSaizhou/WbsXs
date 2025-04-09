@@ -1,0 +1,40 @@
+<svg width="400" height="600" viewBox="0 0 400 600" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <linearGradient id="coverGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#111111" />
+            <stop offset="100%" stop-color="#333333" />
+        </linearGradient>
+        <filter id="shadowFilter" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur in="SourceAlpha" stdDeviation="10" />
+            <feOffset dx="0" dy="10" result="offsetblur" />
+            <feComponentTransfer>
+                <feFuncA type="linear" slope="0.5" />
+            </feComponentTransfer>
+            <feMerge>
+                <feMergeNode />
+                <feMergeNode in="SourceGraphic" />
+            </feMerge>
+        </filter>
+    </defs>
+    
+    <!-- Background -->
+    <rect width="400" height="600" fill="url(#coverGradient)" />
+    
+    <!-- Decorative elements -->
+    <circle cx="200" cy="200" r="150" fill="none" stroke="#FF4B4B" stroke-width="1" opacity="0.5" />
+    <circle cx="200" cy="200" r="100" fill="none" stroke="#FF4B4B" stroke-width="1" opacity="0.7" />
+    <circle cx="200" cy="200" r="50" fill="none" stroke="#FF4B4B" stroke-width="1" opacity="0.9" />
+    
+    <!-- Title -->
+    <text x="200" y="350" font-family="Arial, sans-serif" font-size="40" font-weight="bold" text-anchor="middle" fill="white" filter="url(#shadowFilter)">我不是戏神</text>
+    
+    <!-- Author -->
+    <text x="200" y="400" font-family="Arial, sans-serif" font-size="20" text-anchor="middle" fill="#CCCCCC">三九音域 著</text>
+    
+    <!-- Mask icon -->
+    <g transform="translate(180, 120) scale(0.4)">
+        <path d="M100,50 C100,77.6 77.6,100 50,100 C22.4,100 0,77.6 0,50 C0,22.4 22.4,0 50,0 C77.6,0 100,22.4 100,50 Z" fill="#FF4B4B" />
+        <path d="M30,30 C30,30 30,70 30,70 C30,70 70,70 70,70 C70,70 70,30 70,30 C70,30 30,30 30,30 Z" fill="white" />
+        <path d="M40,40 L40,60 L60,60 L60,40 Z" fill="#FF4B4B" />
+    </g>
+</svg>
