@@ -1,0 +1,942 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>我不是戏神 - 小说介绍</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lucide-css@latest">
+</head>
+<body class="bg-gray-50 text-gray-900 antialiased">
+    <div class="scroll-container">
+        <!-- Hero Section -->
+        <header class="hero relative h-screen flex items-center justify-center overflow-hidden">
+            <div class="absolute inset-0 bg-black opacity-70 z-10"></div>
+            <div class="novel-cover absolute inset-0 opacity-40">
+                <svg class="w-full h-full" viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <radialGradient id="heroGradient" cx="50%" cy="50%" r="70%" fx="50%" fy="50%">
+                            <stop offset="0%" stop-color="#FF4B4B" />
+                            <stop offset="100%" stop-color="#1A1A1A" />
+                        </radialGradient>
+                    </defs>
+                    <rect width="100%" height="100%" fill="url(#heroGradient)" />
+                    <circle cx="600" cy="300" r="200" fill="none" stroke="#ffffff" stroke-width="1" opacity="0.3" />
+                    <circle cx="600" cy="300" r="100" fill="none" stroke="#ffffff" stroke-width="1" opacity="0.5" />
+                    <line x1="200" y1="400" x2="1000" y2="400" stroke="#ffffff" stroke-width="1" opacity="0.2" />
+                </svg>
+            </div>
+            <div class="container mx-auto px-6 relative z-20 text-center">
+                <h1 class="text-5xl md:text-7xl font-bold text-white mb-4 tracking-tight leading-none">
+                    我不是<span class="text-red-500">戏</span>神
+                </h1>
+                <p class="text-xl md:text-2xl text-gray-200 mb-8 max-w-3xl mx-auto">
+                    赤色流星划过天际，人类文明停滞不前。灰色世界降临，将万物拖入无序深渊。在人命如尘的时代，一个戏子屹立于废墟之上，拉开了时代帷幕，宣告<span class="font-geist-mono text-red-400">"好戏开场"</span>。
+                </p>
+                <div class="flex justify-center">
+                    <button class="explore-btn bg-red-500 hover:bg-red-600 text-white font-bold py-3 px-8 rounded-md flex items-center shadow-lg transition duration-300">
+                        <span>探索故事</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M7 13l5 5 5-5M7 6l5 5 5-5" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce z-20">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M7 13l5 5 5-5" />
+                </svg>
+            </div>
+        </header>
+
+        <!-- Introduction Section -->
+        <section class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="flex flex-col md:flex-row items-center justify-between gap-12">
+                    <div class="md:w-1/2">
+                        <h2 class="text-3xl md:text-4xl font-bold mb-8 text-gray-900">小说概述</h2>
+                        <p class="text-lg text-gray-700 mb-6 leading-relaxed">
+                            《我不是戏神》是三九音域创作的一部都市异能小说，故事设定在一颗赤色流星划过后科技停滞的灰色世界。人类文明的发展停滞不前，灰色世界降临，将文明拖入无序深渊。
+                        </p>
+                        <p class="text-lg text-gray-700 mb-6 leading-relaxed">
+                            在这个世界，神道路径系统出现，人们通过不同的路径追求力量和成神之路。故事的主角陈伶，是灭世级灾厄【嘲灾】个体，拥有"穿越者陈伶记忆"，他在这个充满危险的世界中探索自己的身份与使命。
+                        </p>
+                        <div class="flex flex-wrap gap-3 mt-8">
+                            <span class="px-4 py-2 rounded-full text-sm font-medium bg-gray-100 text-gray-800">都市异能</span>
+                            <span class="px-4 py-2 rounded-full text-sm font-medium bg-gray-100 text-gray-800">奇幻冒险</span>
+                            <span class="px-4 py-2 rounded-full text-sm font-medium bg-gray-100 text-gray-800">神道系统</span>
+                            <span class="px-4 py-2 rounded-full text-sm font-medium bg-gray-100 text-gray-800">灾厄世界</span>
+                        </div>
+                    </div>
+                    <div class="md:w-1/2 relative">
+                        <div class="aspect-[3/4] rounded-lg bg-gradient-to-br from-gray-900 to-gray-800 shadow-xl overflow-hidden relative">
+                            <div class="absolute inset-0 flex flex-col justify-between p-8">
+                                <div class="flex justify-between items-start">
+                                    <div class="text-white">
+                                        <h3 class="text-3xl font-bold">我不是戏神</h3>
+                                        <p class="text-gray-300 mt-2">三九音域 著</p>
+                                    </div>
+                                    <div class="bg-red-500 text-white px-3 py-1 rounded-full text-sm font-bold">256.7万字</div>
+                                </div>
+                                <div class="text-white">
+                                    <div class="flex items-center mb-3">
+                                        <span class="inline-block w-3 h-3 bg-red-500 rounded-full mr-2"></span>
+                                        <span class="text-lg">第一卷：戏中人</span>
+                                    </div>
+                                    <div class="flex items-center mb-3">
+                                        <span class="inline-block w-3 h-3 bg-blue-500 rounded-full mr-2"></span>
+                                        <span class="text-lg">第二卷：绘朱颜</span>
+                                    </div>
+                                    <div class="flex items-center mb-3">
+                                        <span class="inline-block w-3 h-3 bg-purple-500 rounded-full mr-2"></span>
+                                        <span class="text-lg">第三卷：祭神舞</span>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <span class="inline-block w-3 h-3 bg-green-500 rounded-full mr-2"></span>
+                                        <span class="text-lg">第四卷：嘲歌行（连载中）</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Decorative elements -->
+                        <div class="absolute -top-4 -right-4 w-40 h-40 bg-red-100 rounded-full opacity-30 -z-10"></div>
+                        <div class="absolute -bottom-4 -left-4 w-24 h-24 bg-blue-100 rounded-full opacity-30 -z-10"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- World Building Section -->
+        <section class="py-20 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-gray-900">世界观设定</h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                    <div class="bg-white p-8 rounded-lg shadow hover:shadow-lg transition duration-300">
+                        <div class="flex items-center mb-6">
+                            <div class="w-12 h-12 flex items-center justify-center rounded-full bg-red-500 text-white mr-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M12 3a9 9 0 1 0 9 9" />
+                                    <polyline points="12 3 12 9 16.3 5.3" />
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-bold">文明停滞</h3>
+                        </div>
+                        <p class="text-gray-700 leading-relaxed">
+                            一颗赤色流星划过天际后，人类文明发展停滞，无法再制造火箭、核弹、飞机、汽车等现代科技产品。近代科学文明的金字塔因此坍塌，人类社会进入停滞时代。
+                        </p>
+                    </div>
+                    
+                    <div class="bg-white p-8 rounded-lg shadow hover:shadow-lg transition duration-300">
+                        <div class="flex items-center mb-6">
+                            <div class="w-12 h-12 flex items-center justify-center rounded-full bg-blue-500 text-white mr-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                                    <polyline points="22 4 12 14.01 9 11.01" />
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-bold">系统降临</h3>
+                        </div>
+                        <p class="text-gray-700 leading-relaxed">
+                            "系神"给全人类蝼蚁颁发系统。这些系统如同散落在凡间的星辰，指引着凡人们走向成神之路，为人类提供了在这个灰暗世界中生存和发展的新可能。
+                        </p>
+                    </div>
+                    
+                    <div class="bg-white p-8 rounded-lg shadow hover:shadow-lg transition duration-300">
+                        <div class="flex items-center mb-6">
+                            <div class="w-12 h-12 flex items-center justify-center rounded-full bg-purple-500 text-white mr-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M8 18L12 22L16 18" />
+                                    <path d="M12 2V22" />
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-bold">神道路径</h3>
+                        </div>
+                        <p class="text-gray-700 leading-relaxed">
+                            传闻大灾变之前，世间共有十八通神大道，如今仅剩十四条，通往不同的"神位"。根据每个人的性格与天赋不同，从神道延伸出不同的路径，决定了他们的能力方向和成长潜力。
+                        </p>
+                    </div>
+                    
+                    <div class="bg-white p-8 rounded-lg shadow hover:shadow-lg transition duration-300">
+                        <div class="flex items-center mb-6">
+                            <div class="w-12 h-12 flex items-center justify-center rounded-full bg-green-500 text-white mr-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M21.21 15.89A10 10 0 1 1 8 2.83" />
+                                    <path d="M22 12A10 10 0 0 0 12 2v10z" />
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-bold">界域与灰界</h3>
+                        </div>
+                        <p class="text-gray-700 leading-relaxed">
+                            人类有九大界域，包括极光界域、天枢界域、红尘界域、无极界域等。每个界域都有其独特的设定和势力。与此同时，存在着灰界——灾厄所生活的世界，与现实世界不在同一维度。
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="mt-16 bg-white p-8 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-bold mb-6 text-gray-900">主要势力</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <div class="border-l-4 border-red-500 pl-4">
+                            <h4 class="font-bold text-lg mb-2">黄昏社</h4>
+                            <p class="text-gray-700">前身是戏道古藏的戏班子，目标是"逆转时代，重启世界"，被九大界域通缉。</p>
+                        </div>
+                        <div class="border-l-4 border-blue-500 pl-4">
+                            <h4 class="font-bold text-lg mb-2">绛天教</h4>
+                            <p class="text-gray-700">被九大界域通缉的组织之一，妄图毁灭一切以回归最初。</p>
+                        </div>
+                        <div class="border-l-4 border-purple-500 pl-4">
+                            <h4 class="font-bold text-lg mb-2">篡火者</h4>
+                            <p class="text-gray-700">全员盗神道，信仰终焉盗神【白银之王】。</p>
+                        </div>
+                        <div class="border-l-4 border-green-500 pl-4">
+                            <h4 class="font-bold text-lg mb-2">嬴覆势力</h4>
+                            <p class="text-gray-700">在时代存档中出现的势力，效忠于帝神道魁首嬴覆。</p>
+                        </div>
+                        <div class="border-l-4 border-yellow-500 pl-4">
+                            <h4 class="font-bold text-lg mb-2">融合派</h4>
+                            <p class="text-gray-700">融合灾厄的组织，寻求人与灾厄共存的可能性。</p>
+                        </div>
+                        <div class="border-l-4 border-gray-500 pl-4">
+                            <h4 class="font-bold text-lg mb-2">九大界域</h4>
+                            <p class="text-gray-700">世界的主要管理势力，掌控世界秩序与规则。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Characters Section -->
+        <section class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-gray-900">主要人物</h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Character 1 -->
+                    <div class="bg-gray-50 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+                        <div class="h-3 bg-red-500"></div>
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold mb-2 flex items-center">
+                                陈伶
+                                <span class="ml-2 text-sm font-normal bg-red-500 text-white px-2 py-1 rounded">主角</span>
+                            </h3>
+                            <p class="text-gray-600 mb-4">灭世级灾厄【嘲灾】</p>
+                            <div class="border-t border-gray-200 my-4"></div>
+                            <p class="text-gray-700 mb-4">
+                                拥有"穿越者陈伶记忆"的灭世级灾厄【嘲灾】个体，黄昏社成员"红心6"，记者林宴，黄金会特使。实力为五阶。亲人为弟弟陈宴和父母陈坛、李秀春。完成多个剧目，并抽取多种神道技能。是戏神道【嘲】/【不当人】的继承者。
+                            </p>
+                            <div class="flex flex-wrap gap-2 mt-4">
+                                <span class="px-2 py-1 bg-red-100 text-red-800 text-xs rounded">戏神道</span>
+                                <span class="px-2 py-1 bg-gray-100 text-gray-800 text-xs rounded">灾厄</span>
+                                <span class="px-2 py-1 bg-gray-100 text-gray-800 text-xs rounded">黄昏社</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Character 2 -->
+                    <div class="bg-gray-50 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+                        <div class="h-3 bg-blue-500"></div>
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold mb-2 flex items-center">
+                                夭
+                                <span class="ml-2 text-sm font-normal bg-blue-500 text-white px-2 py-1 rounded">重要人物</span>
+                            </h3>
+                            <p class="text-gray-600 mb-4">三区陈伶</p>
+                            <div class="border-t border-gray-200 my-4"></div>
+                            <p class="text-gray-700 mb-4">
+                                巫神道天才，企图利用神祭让兄弟二人活下去，意外引来陈伶（嘲）进入陈宴身体。在第三卷结尾，为了帮助被白银之王夺走自我的嘲伶斩煞，化作【绘朱颜】第二笔彻底消失。
+                            </p>
+                            <div class="flex flex-wrap gap-2 mt-4">
+                                <span class="px-2 py-1 bg-blue-100 text-blue-800 text-xs rounded">巫神道</span>
+                                <span class="px-2 py-1 bg-gray-100 text-gray-800 text-xs rounded">牺牲者</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Character 3 -->
+                    <div class="bg-gray-50 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+                        <div class="h-3 bg-purple-500"></div>
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold mb-2 flex items-center">
+                                陈宴
+                                <span class="ml-2 text-sm font-normal bg-purple-500 text-white px-2 py-1 rounded">重要人物</span>
+                            </h3>
+                            <p class="text-gray-600 mb-4">本土陈伶弟弟</p>
+                            <div class="border-t border-gray-200 my-4"></div>
+                            <p class="text-gray-700 mb-4">
+                                戏神道天才，但未入道。拜红王为师，本土陈伶的弟弟。后以不明状态出现，帮陈伶连接戏神道后隐入陈伶体内。与主角陈伶有着密不可分的联系。
+                            </p>
+                            <div class="flex flex-wrap gap-2 mt-4">
+                                <span class="px-2 py-1 bg-purple-100 text-purple-800 text-xs rounded">戏神道</span>
+                                <span class="px-2 py-1 bg-gray-100 text-gray-800 text-xs rounded">红王弟子</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- More Characters -->
+                <div class="mt-12 grid grid-cols-1 md:grid-cols-4 gap-6">
+                    <!-- Character 4 -->
+                    <div class="bg-gray-50 rounded-lg p-5 shadow hover:shadow-md transition duration-300">
+                        <h4 class="text-xl font-bold mb-2">韩蒙</h4>
+                        <p class="text-gray-600 text-sm mb-3">兵神道天才</p>
+                        <p class="text-gray-700 text-sm">
+                            兵神道【审判】路径现任魁首，原是第三区总执法长。
+                        </p>
+                    </div>
+                    
+                    <!-- Character 5 -->
+                    <div class="bg-gray-50 rounded-lg p-5 shadow hover:shadow-md transition duration-300">
+                        <h4 class="text-xl font-bold mb-2">红王</h4>
+                        <p class="text-gray-600 text-sm mb-3">黄昏社领袖</p>
+                        <p class="text-gray-700 text-sm">
+                            黄昏社的两王之一，戏神道魁首，居住在戏道古藏。
+                        </p>
+                    </div>
+                    
+                    <!-- Character 6 -->
+                    <div class="bg-gray-50 rounded-lg p-5 shadow hover:shadow-md transition duration-300">
+                        <h4 class="text-xl font-bold mb-2">灰王</h4>
+                        <p class="text-gray-600 text-sm mb-3">黄昏社领袖</p>
+                        <p class="text-gray-700 text-sm">
+                            黄昏社的两王之一，娼神道【刺客】路径魁首。
+                        </p>
+                    </div>
+                    
+                    <!-- Character 7 -->
+                    <div class="bg-gray-50 rounded-lg p-5 shadow hover:shadow-md transition duration-300">
+                        <h4 class="text-xl font-bold mb-2">嬴覆</h4>
+                        <p class="text-gray-600 text-sm mb-3">帝神道魁首</p>
+                        <p class="text-gray-700 text-sm">
+                            原名李覆，被嬴政魂魄强行附身并与之融合，成为帝神道魁首。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Chapter 1 Section -->
+        <section id="chapter1" class="py-20 chapter-section relative overflow-hidden min-h-screen">
+            <div class="absolute inset-0">
+                <svg class="chapter1-bg w-full h-full opacity-20" viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="bgGradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#111111" />
+                            <stop offset="100%" stop-color="#333333" />
+                        </linearGradient>
+                    </defs>
+                    <rect width="100%" height="100%" fill="url(#bgGradient1)" />
+                    <circle cx="200" cy="200" r="50" fill="none" stroke="#FF4B4B" stroke-width="1" />
+                    <circle cx="700" cy="500" r="100" fill="none" stroke="#FF4B4B" stroke-width="1" />
+                    <path d="M400 300 Q 600 100 800 300" stroke="#FF4B4B" stroke-width="1" fill="none" />
+                    <path d="M400 500 Q 600 700 800 500" stroke="#FF4B4B" stroke-width="1" fill="none" />
+                </svg>
+            </div>
+            <div class="container mx-auto px-6 relative z-10">
+                <div class="flex flex-col md:flex-row gap-10">
+                    <div class="md:w-1/3">
+                        <div class="sticky top-20">
+                            <h2 class="text-6xl font-bold text-red-500 chapter-title">第一卷</h2>
+                            <h3 class="text-4xl font-bold text-gray-900 mt-3 mb-6">戏中人</h3>
+                            <div class="h-1 w-20 bg-red-500 mb-6"></div>
+                            <p class="text-lg text-gray-700 mb-8">
+                                从第1章《戏鬼回家》到第320章《师姐》，共320章。故事的开端，"好戏开场"。
+                            </p>
+                            <div class="quote-container bg-gray-100 p-6 rounded-lg relative">
+                                <div class="quote-icon absolute -top-3 -left-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-red-500" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
+                                    </svg>
+                                </div>
+                                <p class="text-gray-700 italic font-geist-mono">
+                                    "在人命如尘的时代，一个戏子屹立于废墟之上，拉开了时代帷幕。好戏开场。"
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md:w-2/3">
+                        <div class="chapter-content prose prose-lg max-w-none">
+                            <p>
+                                《戏中人》作为《我不是戏神》的首卷，奠定了整个故事的基础。故事开始于灰色世界降临后的混乱时代，文明的进步被迫停滞，人类社会陷入混乱与无序。
+                            </p>
+                            
+                            <h4 class="text-2xl font-bold mt-10 mb-4">身份之谜</h4>
+                            <p>
+                                主角陈伶发现自己拥有"穿越者陈伶记忆"，实际上是灭世级灾厄【嘲灾】个体。这个身份设定引发了关于真实与虚幻、自我认知与命运的深层思考。陈伶需要面对自己双重身份的矛盾，在"人"与"灾厄"之间寻找平衡。
+                            </p>
+                            
+                            <div class="interactive-element bg-gray-900 text-white p-6 my-8 rounded-lg hover:bg-gray-800 transition-all cursor-pointer">
+                                <h5 class="text-xl font-bold mb-3 flex items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                    </svg>
+                                    剧目展示: 《戏鬼回家》
+                                </h5>
+                                <p class="text-gray-300 mb-4">
+                                    陈伶的第一个剧目，标志着他戏神道路的开始。点击展开详情...
+                                </p>
+                                <div class="hidden-content hidden">
+                                    <div class="border-t border-gray-700 my-4"></div>
+                                    <p class="text-gray-300">
+                                        在《戏鬼回家》剧目中，陈伶首次尝试运用戏神道的能力，通过表演与真实之间的界限模糊，完成了对"鬼"的扮演。这一剧目不仅展示了戏神道的独特魅力，也暗示了陈伶与"灾厄"身份的复杂联系。
+                                    </p>
+                                    <p class="text-gray-300 mt-3">
+                                        随着剧情的深入，陈伶逐渐领悟到：在这个世界上，每个人都是某种意义上的"戏中人"，在不同的舞台上扮演着不同的角色。而真正的力量，来自于理解并掌控这些角色之间的转换。
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <h4 class="text-2xl font-bold mt-10 mb-4">黄昏社与神道体系</h4>
+                            <p>
+                                陈伶加入黄昏社成为"红心6"，开始深入了解这个世界的核心规则——神道体系。这个神秘组织的目标是"逆转时代，重启世界"，这一宏大目标与陈伶个人命运紧密相连。
+                            </p>
+                            <p>
+                                在黄昏社的引导下，陈伶逐渐了解到神道路径的多样性和复杂性。戏神道作为其中之一，拥有通过表演和扮演角色获得力量的独特能力。这种力量的本质是什么？是对现实的扭曲还是对真理的呈现？这些问题贯穿整个第一卷。
+                            </p>
+                            
+                            <h4 class="text-2xl font-bold mt-10 mb-4">初显锋芒</h4>
+                            <p>
+                                通过完成多个剧目，陈伶的能力不断增强，同时也吸引了更多势力的注意。以记者林宴的身份活动，陈伶开始接触到这个世界更广阔的秘密，包括赤色流星与文明停滞背后的真相。
+                            </p>
+                            <p>
+                                随着故事进展，陈伶与弟弟陈宴的关系成为情感线的重要部分。这种兄弟情谊在残酷的世界中显得尤为珍贵，也为后续剧情埋下伏笔。
+                            </p>
+                            
+                            <div class="my-10 p-6 bg-gray-100 rounded-lg border-l-4 border-red-500">
+                                <h5 class="text-xl font-bold mb-3">第一卷主题思考</h5>
+                                <ul class="list-disc pl-6 space-y-2">
+                                    <li><strong>身份认同</strong>：陈伶面对"穿越者"与"灾厄"的双重身份，寻找真正的自我</li>
+                                    <li><strong>表演与真实</strong>：作为"戏中人"，何为表演，何为真实？面具之下是否还有真实的自己？</li>
+                                    <li><strong>适应与生存</strong>：在危险的灰色世界中找到立足之地，适应新的规则与秩序</li>
+                                </ul>
+                            </div>
+                            
+                            <p>
+                                第一卷结束于陈伶遇见"师姐"这一关键人物，暗示着他的戏神之路将迎来新的转折。随着能力的提升和对世界认知的深入，陈伶也逐渐意识到自己肩负的使命远不只是简单的生存，而是可能关乎整个世界的命运。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Chapter 2 Section -->
+        <section id="chapter2" class="py-20 chapter-section relative overflow-hidden min-h-screen bg-gray-50">
+            <div class="absolute inset-0">
+                <svg class="chapter2-bg w-full h-full opacity-10" viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="bgGradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#F0F9FF" />
+                            <stop offset="100%" stop-color="#E0F2FE" />
+                        </linearGradient>
+                    </defs>
+                    <rect width="100%" height="100%" fill="url(#bgGradient2)" />
+                    <path d="M0 200 Q 400 100 800 300 T 1200 400" fill="none" stroke="#3B82F6" stroke-width="1" />
+                    <path d="M0 500 Q 400 400 800 600 T 1200 700" fill="none" stroke="#3B82F6" stroke-width="1" />
+                    <path d="M300 0 Q 400 400 300 800" fill="none" stroke="#3B82F6" stroke-width="1" />
+                    <path d="M900 0 Q 800 400 900 800" fill="none" stroke="#3B82F6" stroke-width="1" />
+                </svg>
+            </div>
+            <div class="container mx-auto px-6 relative z-10">
+                <div class="flex flex-col md:flex-row-reverse gap-10">
+                    <div class="md:w-1/3">
+                        <div class="sticky top-20">
+                            <h2 class="text-6xl font-bold text-blue-500 chapter-title text-right">第二卷</h2>
+                            <h3 class="text-4xl font-bold text-gray-900 mt-3 mb-6 text-right">绘朱颜</h3>
+                            <div class="h-1 w-20 bg-blue-500 mb-6 ml-auto"></div>
+                            <p class="text-lg text-gray-700 mb-8 text-right">
+                                从第320章《师姐》到第721章《我找到你了》，共406章。追寻真相的过程，涉足更多神秘势力。
+                            </p>
+                            <div class="quote-container bg-white p-6 rounded-lg shadow-sm relative">
+                                <div class="quote-icon absolute -top-3 -right-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-500" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
+                                    </svg>
+                                </div>
+                                <p class="text-gray-700 italic font-geist-mono text-right">
+                                    "真相如同镜中之影，看得见却无法触及。绘朱颜，不过是另一层面具。"
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md:w-2/3">
+                        <div class="chapter-content prose prose-lg max-w-none">
+                            <p>
+                                《绘朱颜》作为《我不是戏神》的第二卷，将故事引入更加复杂的局面。随着对世界了解的加深，陈伶接触到更多神秘势力和重要人物，其中包括兵神道天才韩蒙。这一卷不仅扩展了世界观的广度，也增加了对主角身份与使命的深度探索。
+                            </p>
+                            
+                            <h4 class="text-2xl font-bold mt-10 mb-4">身份探索</h4>
+                            <p>
+                                在这一卷中，陈伶深入研究"夭（三区陈伶）"的背景，发现更多关于自己身份的真相。"绘朱颜"作为一种能力，可能允许陈伶改变外貌或身份，在不同角色间自如转换。这一能力不仅是战术上的优势，也是对自我认知的挑战。
+                            </p>
+                            <p>
+                                随着对"穿越者记忆"和"灾厄身份"的深入探索，陈伶开始质疑：我是谁？我从哪里来？我应该前往何处？这些存在主义的问题贯穿整个卷章。
+                            </p>
+                            
+                            <div class="interactive-element bg-blue-900 text-white p-6 my-8 rounded-lg hover:bg-blue-800 transition-all cursor-pointer">
+                                <h5 class="text-xl font-bold mb-3 flex items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M17.8 19.2L16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z" />
+                                    </svg>
+                                    能力解析: 【绘朱颜】
+                                </h5>
+                                <p class="text-gray-300 mb-4">
+                                    陈伶在第二卷中获得的关键能力，与身份转换和面具主题密切相关。点击展开详情...
+                                </p>
+                                <div class="hidden-content hidden">
+                                    <div class="border-t border-blue-700 my-4"></div>
+                                    <p class="text-gray-300">
+                                        【绘朱颜】作为一种高阶戏神道能力，允许使用者在一定程度上改变自身外貌和气质，甚至可以模拟他人的能力特征。这种能力的本质不是简单的物理变形，而是通过"扮演"的方式，使自身在观众（世界）的认知中发生改变。
+                                    </p>
+                                    <p class="text-gray-300 mt-3">
+                                        这一能力的独特之处在于，它的效果与使用者对"角色"的理解深度直接相关。陈伶通过对不同人物的研究和体验，能够在【绘朱颜】的辅助下完成近乎完美的角色扮演，不仅欺骗他人，有时甚至能短暂欺骗世界规则本身。
+                                    </p>
+                                    <p class="text-gray-300 mt-3">
+                                        在剧情中，【绘朱颜】不仅是战斗工具，也是陈伶探索自我、理解他人的重要媒介。通过体验不同的身份，他逐渐形成了更加完整的世界观和价值观。
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <h4 class="text-2xl font-bold mt-10 mb-4">势力冲突</h4>
+                            <p>
+                                与篡火者、绛天教等敌对势力的冲突在本卷中显著升级。这些组织各有其目标和理念，如篡火者全员盗神道，信仰终焉盗神【白银之王】；绛天教则妄图毁灭一切以回归最初。这些理念与黄昏社"逆转时代，重启世界"的目标形成鲜明对比。
+                            </p>
+                            <p>
+                                这些冲突不仅是力量的较量，也是价值观和理念的碰撞。通过与不同立场的人物交流和对抗，陈伶开始思考：在这个残酷的世界中，什么才是正确的选择？重启世界是否真的是解决问题的唯一途径？
+                            </p>
+                            
+                            <h4 class="text-2xl font-bold mt-10 mb-4">系统深入</h4>
+                            <p>
+                                陈伶在神道路径系统中的探索更加深入，了解到更多关于神道的奥秘与限制。每条神道路径都有其独特的特性和成长方式，如戏神道通过表演获取力量，兵神道则依靠战斗和对抗。
+                            </p>
+                            <p>
+                                随着对系统的深入理解，陈伶也开始接触到关于"系神"的更多情报，这个给全人类颁发系统的神秘存在，其真实意图和本质逐渐成为故事中的重要谜题。
+                            </p>
+                            
+                            <div class="my-10 p-6 bg-blue-50 rounded-lg border-l-4 border-blue-500">
+                                <h5 class="text-xl font-bold mb-3">第二卷主题思考</h5>
+                                <ul class="list-disc pl-6 space-y-2">
+                                    <li><strong>自我与伪装</strong>：在多重身份间保持本真，何为真实的自我</li>
+                                    <li><strong>力量与责任</strong>：能力增强带来更大的责任和抉择，如何运用力量</li>
+                                    <li><strong>真相的追寻</strong>：世界的真相往往隐藏在表象之下，需要勇气和智慧去揭开</li>
+                                </ul>
+                            </div>
+                            
+                            <p>
+                                第二卷以章节《我找到你了》作为收尾，这个意味深长的标题暗示着主角在身份探索和能力成长后的重要发现或相遇。可能是与关键人物的重逢，也可能是对自我的重新认识。这一发现为第三卷的故事奠定了基础，同时也标志着陈伶成长道路上的重要里程碑。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Chapter 3 Section -->
+        <section id="chapter3" class="py-20 chapter-section relative overflow-hidden min-h-screen bg-purple-50">
+            <div class="absolute inset-0">
+                <svg class="chapter3-bg w-full h-full opacity-15" viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <radialGradient id="bgGradient3" cx="50%" cy="50%" r="70%" fx="50%" fy="50%">
+                            <stop offset="0%" stop-color="#F5F3FF" />
+                            <stop offset="100%" stop-color="#EDE9FE" />
+                        </radialGradient>
+                    </defs>
+                    <rect width="100%" height="100%" fill="url(#bgGradient3)" />
+                    <circle cx="600" cy="400" r="300" fill="none" stroke="#8B5CF6" stroke-width="1" opacity="0.5" />
+                    <circle cx="600" cy="400" r="200" fill="none" stroke="#8B5CF6" stroke-width="1" opacity="0.6" />
+                    <circle cx="600" cy="400" r="100" fill="none" stroke="#8B5CF6" stroke-width="1" opacity="0.7" />
+                    <path d="M600 100 L600 700" stroke="#8B5CF6" stroke-width="1" opacity="0.4" />
+                    <path d="M300 400 L900 400" stroke="#8B5CF6" stroke-width="1" opacity="0.4" />
+                </svg>
+            </div>
+            <div class="container mx-auto px-6 relative z-10">
+                <div class="flex flex-col md:flex-row gap-10">
+                    <div class="md:w-1/3">
+                        <div class="sticky top-20">
+                            <h2 class="text-6xl font-bold text-purple-500 chapter-title">第三卷</h2>
+                            <h3 class="text-4xl font-bold text-gray-900 mt-3 mb-6">祭神舞</h3>
+                            <div class="h-1 w-20 bg-purple-500 mb-6"></div>
+                            <p class="text-lg text-gray-700 mb-8">
+                                从第725章《观众夺权》到第1095章《【它】》，共371章。情感线发展，重大牺牲与蜕变。
+                            </p>
+                            <div class="quote-container bg-white p-6 rounded-lg shadow-md relative">
+                                <div class="quote-icon absolute -top-3 -left-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-purple-500" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
+                                    </svg>
+                                </div>
+                                <p class="text-gray-700 italic font-geist-mono">
+                                    "若问我为何而舞，为生者、为死者、亦或为那未曾来过的未来。"
+                                </p>
+                            </div>
+                            
+                            <div class="mt-12 interactive-element-3d bg-white shadow-lg rounded-lg p-6 transform transition-all duration-500 hover:scale-105 cursor-pointer perspective">
+                                <h4 class="text-xl font-bold mb-4 text-purple-800">祭神舞的意义</h4>
+                                <p class="text-gray-700">
+                                    点击深入了解这一重要仪式的含义...
+                                </p>
+                                <div class="card-content mt-4 hidden">
+                                    <p class="text-gray-700">
+                                        祭神舞是神道体系中的核心仪式，通过特定的舞蹈动作和精神状态，打开通往神位的通道。在这一过程中，参与者既是祭祀者，也是被祭祀者，既是观众，也是表演者。
+                                    </p>
+                                    <p class="text-gray-700 mt-3">
+                                        对陈伶而言，这一仪式是他成长道路上的关键节点，也是他重新审视自己身份和使命的关键时刻。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md:w-2/3">
+                        <div class="chapter-content prose prose-lg max-w-none">
+                            <p>
+                                《祭神舞》作为《我不是戏神》的第三卷，是陈伶个人成长和情感发展的关键阶段。这一卷围绕重大神道仪式"祭神舞"展开，是陈伶成长道路上的转折点。情感线的发展和人物间的牺牲为故事增添了深厚的情感层次，读者评价中提到这一卷后"情感更加细腻，引人入胜"。
+                            </p>
+                            
+                            <h4 class="text-2xl font-bold mt-10 mb-4">生死对抗</h4>
+                            <p>
+                                第三卷中，陈伶与白银之王展开正面对抗，经历重大危机。白银之王作为终焉盗神，其力量和危险性远超陈伶之前遇到的敌人。在这场生死对抗中，陈伶的意志和能力受到前所未有的考验。
+                            </p>
+                            <p>
+                                当陈伶的自我被白银之王夺走，陷入前所未有的危机时，故事达到了高潮。这一情节不仅展示了敌人的强大，也为"夭"的牺牲埋下伏笔。
+                            </p>
+                            
+                            <div class="interactive-element bg-purple-900 text-white p-6 my-8 rounded-lg hover:bg-purple-800 transition-all cursor-pointer">
+                                <h5 class="text-xl font-bold mb-3 flex items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                                        <polyline points="14 2 14 8 20 8" />
+                                        <line x1="16" y1="13" x2="8" y2="13" />
+                                        <line x1="16" y1="17" x2="8" y2="17" />
+                                        <polyline points="10 9 9 9 8 9" />
+                                    </svg>
+                                    关键情节: 白银之王之战
+                                </h5>
+                                <p class="text-gray-300 mb-4">
+                                    第三卷的核心冲突，陈伶面临的最大危机。点击展开详情...
+                                </p>
+                                <div class="hidden-content hidden">
+                                    <div class="border-t border-purple-700 my-4"></div>
+                                    <p class="text-gray-300">
+                                        白银之王作为盗神道的顶级存在，拥有窃取他人能力和本质的可怕力量。在这场旷日持久的战斗中，陈伶被白银之王剥夺了部分自我，陷入前所未有的存在危机——他的"嘲灾"身份与"穿越者记忆"之间的平衡被打破。
+                                    </p>
+                                    <p class="text-gray-300 mt-3">
+                                        这场战斗不仅是力量的对抗，更是意志和本质的搏斗。陈伶必须在自己的内心世界中重新找到平衡，才能对抗这位强大的敌人。这也是他真正理解戏神道本质的关键时刻。
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <h4 class="text-2xl font-bold mt-10 mb-4">终极牺牲</h4>
+                            <p>
+                                关键时刻，"夭"为了帮助被白银之王夺走自我的嘲伶斩煞，做出终极牺牲，化作【绘朱颜】第二笔彻底消失。这一牺牲情节是整个第三卷最为感人和震撼的部分，也标志着陈伶心路历程的重大转折。
+                            </p>
+                            <p>
+                                "夭"的牺牲不仅从物理上救了陈伶，也从精神上给了他新的启示和力量。通过这一牺牲，陈伶更深刻地理解了责任、牺牲和使命的含义，为他后续的成长奠定了坚实的情感基础。
+                            </p>
+                            
+                            <h4 class="text-2xl font-bold mt-10 mb-4">质变与飞跃</h4>
+                            <p>
+                                通过这场生死危机和"夭"的牺牲，陈伶的能力和对世界的认
+知发生质的飞跃，更深入地理解了戏神道的本质和自己作为【嘲】的使命。这种理解不再是表面的知识，而是通过亲身经历和深刻体验获得的本质认知。
+                            </p>
+                            <p>
+                                在这一过程中，陈伶开始思考灾厄的本质、神道的意义，以及自己在这个世界中的定位。他不再仅仅是被动地接受命运，而是开始主动思考如何利用自己的能力改变世界。
+                            </p>
+                            
+                            <div class="my-10 p-6 bg-purple-100 rounded-lg border-l-4 border-purple-500">
+                                <h5 class="text-xl font-bold mb-3">第三卷主题思考</h5>
+                                <ul class="list-disc pl-6 space-y-2">
+                                    <li><strong>牺牲与救赎</strong>："夭"的牺牲让陈伶领悟到更深层的真理，探讨了牺牲的价值与意义</li>
+                                    <li><strong>神性与人性的平衡</strong>：获得强大力量的同时保持人性本质，在神道路上如何不迷失自我</li>
+                                    <li><strong>失去与成长</strong>：通过失去重要的人获得新的认知和力量，痛苦如何转化为成长的动力</li>
+                                </ul>
+                            </div>
+                            
+                            <p>
+                                第三卷以章节《【它】》结束，这个神秘的标题暗示着某种超越认知的存在或力量的出现，或者是陈伶自身某种本质的觉醒。这一暗示为第四卷的故事埋下伏笔，引导读者思考：在神与人、现实与幻象的界限之外，是否还有更高维度的存在？
+                            </p>
+                            <p>
+                                总的来说，第三卷《祭神舞》是《我不是戏神》故事中情感最为丰富、人物成长最为明显的一卷，通过牺牲与救赎的主题，将故事从单纯的能力进阶提升到对生命意义和价值的深刻思考。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Chapter 4 Section -->
+        <section id="chapter4" class="py-20 chapter-section relative overflow-hidden min-h-screen bg-green-50">
+            <div class="absolute inset-0">
+                <svg class="chapter4-bg w-full h-full opacity-15" viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="bgGradient4" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#ECFDF5" />
+                            <stop offset="100%" stop-color="#D1FAE5" />
+                        </linearGradient>
+                    </defs>
+                    <rect width="100%" height="100%" fill="url(#bgGradient4)" />
+                    <path d="M0 200 C 400 100, 800 300, 1200 200" stroke="#10B981" stroke-width="1" fill="none" />
+                    <path d="M0 400 C 400 300, 800 500, 1200 400" stroke="#10B981" stroke-width="1" fill="none" />
+                    <path d="M0 600 C 400 500, 800 700, 1200 600" stroke="#10B981" stroke-width="1" fill="none" />
+                    <path d="M200 0 C 100 200, 300 600, 200 800" stroke="#10B981" stroke-width="1" fill="none" />
+                    <path d="M600 0 C 500 200, 700 600, 600 800" stroke="#10B981" stroke-width="1" fill="none" />
+                    <path d="M1000 0 C 900 200, 1100 600, 1000 800" stroke="#10B981" stroke-width="1" fill="none" />
+                </svg>
+            </div>
+            <div class="container mx-auto px-6 relative z-10">
+                <div class="flex flex-col md:flex-row-reverse gap-10">
+                    <div class="md:w-1/3">
+                        <div class="sticky top-20">
+                            <h2 class="text-6xl font-bold text-green-500 chapter-title text-right">第四卷</h2>
+                            <h3 class="text-4xl font-bold text-gray-900 mt-3 mb-6 text-right">嘲歌行</h3>
+                            <div class="h-1 w-20 bg-green-500 mb-6 ml-auto"></div>
+                            <p class="text-lg text-gray-700 mb-8 text-right">
+                                从第1095章《【它】》至今，连载中。终极目标显现，揭示灾变真相。
+                            </p>
+                            <div class="quote-container bg-white p-6 rounded-lg shadow-md relative">
+                                <div class="quote-icon absolute -top-3 -right-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green-500" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
+                                    </svg>
+                                </div>
+                                <p class="text-gray-700 italic font-geist-mono text-right">
+                                    "我不是戏神，我只是一个不愿按剧本行事的演员。"
+                                </p>
+                            </div>
+                            
+                            <div class="mt-12 bg-white shadow-lg rounded-lg overflow-hidden">
+                                <div class="bg-green-500 text-white p-4">
+                                    <h4 class="font-bold text-lg">连载进度</h4>
+                                </div>
+                                <div class="p-4">
+                                    <div class="flex items-center justify-between mb-2">
+                                        <span class="text-sm text-gray-600">已完成</span>
+                                        <span class="text-sm font-bold">146章</span>
+                                    </div>
+                                    <div class="w-full bg-gray-200 rounded-full h-2.5">
+                                        <div class="bg-green-500 h-2.5 rounded-full" style="width: 45%"></div>
+                                    </div>
+                                    <p class="mt-4 text-gray-700 text-sm">
+                                        目前连载至第1240章《奔赴南海》
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md:w-2/3">
+                        <div class="chapter-content prose prose-lg max-w-none">
+                            <p>
+                                《嘲歌行》作为《我不是戏神》的第四卷，仍在连载中，但已经初步展现出故事走向最终高潮的轨迹。在经历"夭"的牺牲和祭神舞的洗礼后，陈伶对自己的"嘲灾"身份有了新的理解，对自己肩负的使命也有了更清晰的认知。
+                            </p>
+                            
+                            <h4 class="text-2xl font-bold mt-10 mb-4">身份认同</h4>
+                            <p>
+                                在这一卷中，陈伶不再纠结于"穿越者"与"灾厄"的身份矛盾，而是开始寻找二者的平衡点和融合。他开始思考"我不是戏神"这一标题的深层含义——不是完全拒绝戏神的力量和职责，而是拒绝被既定的命运和角色所束缚。
+                            </p>
+                            <p>
+                                这种身份认同的转变，使陈伶的心态更加成熟，力量运用更加得心应手。他不再是被动地接受和适应这个世界，而是开始主动思考如何改变和影响世界。
+                            </p>
+                            
+                            <div class="interactive-element bg-green-800 text-white p-6 my-8 rounded-lg hover:bg-green-700 transition-all cursor-pointer">
+                                <h5 class="text-xl font-bold mb-3 flex items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                                    </svg>
+                                    要点探索: "嘲歌行"的意义
+                                </h5>
+                                <p class="text-gray-300 mb-4">
+                                    第四卷标题的深层含义与主角成长的关联。点击展开详情...
+                                </p>
+                                <div class="hidden-content hidden">
+                                    <div class="border-t border-green-600 my-4"></div>
+                                    <p class="text-gray-300">
+                                        "嘲歌行"作为第四卷的标题，包含多层含义：首先，"嘲"直接对应陈伶的灾厄身份【嘲灾】；其次，"歌"暗示了一种更为主动的表达方式，比起"戏"的扮演，"歌"更多地展现自我；最后，"行"字则表明这是一段主动的旅程，而非被动的剧本。
+                                    </p>
+                                    <p class="text-gray-300 mt-3">
+                                        这个标题暗示陈伶已经从单纯的"戏中人"，转变为能够编写自己命运之歌的主动者。他不再仅仅是舞台上的一名演员，而是逐渐成为能够影响整个舞台的导演和创作者。
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <h4 class="text-2xl font-bold mt-10 mb-4">终极谜题</h4>
+                            <p>
+                                随着故事的发展，关于赤色流星、系神、灾厄起源以及文明停滞的终极谜题逐渐浮出水面。陈伶的"奔赴南海"之旅，可能就是为了寻找这些谜题的答案或关键线索。
+                            </p>
+                            <p>
+                                这些谜题的揭示不仅关乎世界的过去，也决定着世界的未来。陈伶与黄昏社"逆转时代，重启世界"的终极目标，需要建立在对这些谜题全面理解的基础上。
+                            </p>
+                            
+                            <h4 class="text-2xl font-bold mt-10 mb-4">力量对抗</h4>
+                            <p>
+                                在第四卷中，陈伶将面对更强大的敌人，如嬴覆势力（帝神道魁首）。嬴覆作为帝神道魁首，其力量和影响力远超陈伶之前遇到的对手，代表着更高层次的威胁。
+                            </p>
+                            <p>
+                                这些高层次的对抗，不仅是力量的比拼，更多地是道路选择和价值观的碰撞。陈伶需要在这些对抗中不断成长，同时保持自己的初心和原则。
+                            </p>
+                            
+                            <div class="my-10 p-6 bg-green-100 rounded-lg border-l-4 border-green-500">
+                                <h5 class="text-xl font-bold mb-3">第四卷主题思考</h5>
+                                <ul class="list-disc pl-6 space-y-2">
+                                    <li><strong>力量的真谛</strong>：探索"嘲灾"力量的极限和本质，真正的力量来源于何处</li>
+                                    <li><strong>命运与反抗</strong>：面对似乎已被设定的命运寻找改变的可能，如何突破既定框架</li>
+                                    <li><strong>回归本心</strong>：在拥有强大力量后保持初心和人性，不被力量改变本质</li>
+                                </ul>
+                            </div>
+                            
+                            <p>
+                                由于第四卷仍在连载中，许多情节和主题尚未完全展开。但根据已有的章节和小说的整体走向，我们可以预见这将是《我不是戏神》中最为宏大和深刻的一卷，将解答前三卷中埋下的诸多谜题，同时完成主角陈伶的最终成长和蜕变。
+                            </p>
+                            <p>
+                                随着故事的深入，"我不是戏神"这一标题的真正含义可能会逐渐显现——不是简单的身份否定，而是对命运束缚的超越，是追求自由意志和真实自我的宣言。在这个充满规则和束缚的世界中，陈伶将以自己的方式，书写属于自己的传奇。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reader Reviews Section -->
+        <section class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-gray-900">读者评价</h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                    <div class="bg-gray-50 p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+                        <div class="flex items-center mb-4">
+                            <div class="flex-shrink-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-gray-400" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zm-2 4a5 5 0 00-4.546 2.916A5.986 5.986 0 0010 16a5.986 5.986 0 004.546-2.084A5 5 0 0010 11z" clip-rule="evenodd" />
+                                </svg>
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="text-lg font-bold text-gray-900">匿名读者</h4>
+                                <div class="flex text-yellow-400 mt-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-gray-700 leading-relaxed">
+                            "《我不是戏神》的情节跌宕起伏，充满惊险刺激的场面和感人至深的情感描写。前期略显晦涩难懂，但后期剧情和文笔都有显著提升，尤其在斩神部分之后，情感更加细腻，引人入胜。相较于作者之前的作品有明显进步，在框架、文笔和人物塑造上都有所提升。"
+                        </p>
+                    </div>
+                    
+                    <div class="bg-gray-50 p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+                        <div class="flex items-center mb-4">
+                            <div class="flex-shrink-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-gray-400" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zm-2 4a5 5 0 00-4.546 2.916A5.986 5.986 0 0010 16a5.986 5.986 0 004.546-2.084A5 5 0 0010 11z" clip-rule="evenodd" />
+                                </svg>
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="text-lg font-bold text-gray-900">知乎用户</h4>
+                                <div class="flex text-yellow-400 mt-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-300" viewBox="0 0 20 20" fill="currentColor">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-gray-700 leading-relaxed">
+                            "《我不是戏神》在设定上与《诡秘之主》和《道诡异仙》有相似之处，例如能力体系、升级仪式、人物设定等，但也有其独特之处，比如更快的节奏和更多的装逼耍帅情节。神道路径界域的设定都和普通小说差异很大，世界观构建有很强的创意性，值得一看。"
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+                        <h4 class="text-lg font-bold mb-3 text-gray-900">人物塑造</h4>
+                        <p class="text-gray-700">
+                            小说中的人物形象饱满，不同立场的角色特色鲜明，如席仁杰、黄小姐、孔宝生等。主角陈伶和韩蒙在充满挑战和危险的世界中不断探索、成长，为了生存和理想而奋斗。
+                        </p>
+                    </div>
+                    
+                    <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+                        <h4 class="text-lg font-bold mb-3 text-gray-900">文笔与情节</h4>
+                        <p class="text-gray-700">
+                            情节跌宕起伏，充满惊险刺激的场面和感人至深的情感描写。随着故事进展，文笔有显著提升，尤其在第三卷后，情感描写更加细腻，人物动机更加合理。
+                        </p>
+                    </div>
+                    
+                    <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+                        <h4 class="text-lg font-bold mb-3 text-gray-900">不足之处</h4>
+                        <p class="text-gray-700">
+                            部分读者认为该小说存在战力崩坏的问题，主角越阶战斗过于频繁，导致反派角色缺乏压迫感。此外，主角情感转变略显突兀，部分配角存在降智嫌疑。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to action -->
+        <section class="py-20 bg-gray-900 text-white">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-8">开启你的阅读之旅</h2>
+                <p class="text-xl text-gray-300 mb-10 max-w-3xl mx-auto">
+                    256.7万字的宏大故事，四大篇章的精彩内容，一个关于身份、力量与救赎的奇幻冒险。《我不是戏神》等待你的探索。
+                </p>
+                <a href="https://fanqienovel.com/page/7276384138653862966" target="_blank" class="inline-block bg-red-500 hover:bg-red-600 text-white font-bold py-3 px-8 rounded-lg transition duration-300 transform hover:-translate-y-1">
+                    前往番茄小说阅读
+                </a>
+                <div class="mt-8 text-gray-500 text-sm">
+                    <p>本网站仅为作品介绍，不提供任何下载或在线阅读服务</p>
+                    <p>版权归原作者所有</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="py-10 bg-gray-100">
+            <div class="container mx-auto px-6">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <div class="text-gray-600 mb-6 md:mb-0">
+                        <h3 class="text-lg font-bold mb-2">我不是戏神</h3>
+                        <p class="text-sm">作者：三九音域</p>
+                        <p class="text-sm">连载平台：番茄小说</p>
+                    </div>
+                    <div class="text-center md:text-right">
+                        <p class="text-sm text-gray-600 mb-2">
+                            Built with <a href="https://flowith.net" target="_blank" class="text-blue-500 hover:text-blue-700">Flowith Oracle</a>.
+                        </p>
+                        <p class="text-xs text-gray-500">
+                            本站仅供交流学习使用，不代表任何商业立场
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        window.addEventListener("wheel", (e)=> {
+            const isPinching = e.ctrlKey
+            if(isPinching) e.preventDefault()
+        }, { passive: false })
+    </script>
+</body>
+</html>

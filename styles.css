@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --color-primary: #ef4444;
+    --color-chapter1: #ef4444;
+    --color-chapter2: #3b82f6;
+    --color-chapter3: #8b5cf6;
+    --color-chapter4: #10b981;
+    --transition-smooth: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    color: #1a1a1a;
+    overflow-x: hidden;
+}
+
+.font-geist-mono {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Hero section styling */
+.hero {
+    position: relative;
+    background-color: #000;
+    color: white;
+}
+
+/* Chapter styling */
+.chapter-section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+#chapter1 {
+    background-color: rgba(254, 242, 242, 0.8);
+}
+
+#chapter2 {
+    background-color: rgba(239, 246, 255, 0.8);
+}
+
+#chapter3 {
+    background-color: rgba(245, 243, 255, 0.8);
+}
+
+#chapter4 {
+    background-color: rgba(236, 253, 245, 0.8);
+}
+
+.chapter-title {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: var(--transition-smooth);
+}
+
+.chapter-section.active .chapter-title {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Quote container styling */
+.quote-container {
+    position: relative;
+    margin-top: 2rem;
+    transition: transform 0.3s ease-in-out;
+}
+
+.quote-container:hover {
+    transform: translateY(-5px);
+}
+
+/* Interactive elements */
+.interactive-element {
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.interactive-element:hover {
+    transform: translateY(-5px);
+}
+
+/* 3D Card effect */
+.perspective {
+    perspective: 1000px;
+}
+
+.interactive-element-3d {
+    transition: transform 0.5s ease;
+    transform-style: preserve-3d;
+}
+
+.interactive-element-3d:hover {
+    transform: rotateY(5deg) translateZ(10px);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    animation: fadeIn 0.8s ease forwards;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* Character card hover effects */
+.character-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.character-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .chapter-title {
+        font-size: 2.5rem;
+    }
+    
+    h3 {
+        font-size: 1.75rem;
+    }
+    
+    .quote-container {
+        padding: 1rem;
+    }
+}
+
+/* Scroll container */
+.scroll-container {
+    position: relative;
+    width: 100%;
+    overflow-x: hidden;
+}
